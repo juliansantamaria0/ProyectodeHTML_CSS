@@ -150,7 +150,7 @@ h1, h2, h3 {
     
     background-size: cover;
     background-position: center center;
-    animation: background-slideshow 18s infinite; 
+    animation: background-slideshow 5s infinite; 
     transition: background-image 1s ease-in-out; 
 }
 
