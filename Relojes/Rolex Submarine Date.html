@@ -1,59 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles - Rolex Daytona Cosmograph - LuxTime</title>
-    <link rel="stylesheet" href="../Relojes/Style.relojes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles — Rolex Submariner Date — LuxTime</title>
+  <link rel="stylesheet" href="../Relojes/Style.relojes.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <header class="main-header">
-        <div class="nac-container">
-            <a href="../../index.html" class="logo" aria-label="LuxTime - Ir a la página de inicio">LuxTime</a>
-            <nav class="navegacion" id="nav-menu" aria-label="Navegación principal">
-                <ul>
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="../../Marcas/Marcas.html">Marcas</a></li>
-                    <li><a href="../../Coleccion/Coleccion.html">Colección</a></li>
-                    <li><a href="../../Historia/historia.html">Historia</a></li>
-                    <li><a href="../../Contacto/Contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="nac-container">
+      <a href="../../index.html" class="logo" aria-label="LuxTime - Ir a la página de inicio">LuxTime</a>
+      <nav class="navegacion" id="nav-menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="../../Marcas/Marcas.html">Marcas</a></li>
+          <li><a href="../../Coleccion/Coleccion.html">Colección</a></li>
+          <li><a href="../../Historia/historia.html">Historia</a></li>
+          <li><a href="../../Contacto/Contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="detail-section">
-            <img src="../../Relojsimage/rolex Oyster.png" alt="Relojes/RolexDytona.html">
-            <h1>Rolex Submariner Date</h1>
-            <p class="detail-price">USD $10,500</p>
-            <p class="detail-status">Estado: en stock</p>
-            <p>El Rolex Submariner Date es uno de los relojes de buceo más icónicos del mundo. Introducido en 1953, estableció el estándar para relojes resistentes al agua y de alta precisión. Su diseño atemporal y su robustez lo convierten en un favorito tanto para aventureros como para coleccionistas.</p>
-            <p>Este modelo incluye una caja de acero inoxidable de 40 mm, bisel giratorio unidireccional con inserto cerámico, y una resistencia al agua de 300 metros. El movimiento automático certificado por COSC garantiza máxima precisión, mientras que su estética deportiva y elegante lo hace versátil para cualquier ocasión.</p>
-            <a href="../Coleccion/Coleccion.html" class="back-button">Volver a la Colección</a>
-        </section>
-    </main>
+  <!-- Main -->
+  <main>
+    <!-- Detalle del producto -->
+    <section class="detail-section" id="producto">
+      <div class="detail-grid">
+        <!-- Media -->
+        <figure class="detail-media" aria-label="Imagen principal del reloj">
+          <img
+            src="../../Relojsimage/rolex Oyster.png"
+            alt="Rolex Submariner Date — vista frontal del reloj"
+          />
+        </figure>
 
-    <footer id="contacto">
-        <div class="footer-content">
-            <div class="footer-section">
-                <a href="https://github.com/juliansantamaria0" class="footer-link">LuxTime</a>
-                <div class="footer-text">Relojes de Lujo</div>
+        <!-- Información -->
+        <div class="detail-info">
+          <h1>Rolex Submariner Date</h1>
+          <p class="detail-price">USD $10,500</p>
+          <p class="detail-status">Estado: en stock</p>
+
+          <p>
+            El Rolex Submariner Date es uno de los relojes de buceo más icónicos.
+            Su diseño atemporal, robustez y precisión lo convierten en favorito de
+            aventureros y coleccionistas.
+          </p>
+          <p>
+            Caja Oyster en acero, bisel giratorio unidireccional con inserto cerámico
+            y resistencia al agua de 300 m. Movimiento automático certificado para desempeño
+            fiable en cualquier situación.
+          </p>
+
+          <!-- Especificaciones técnicas -->
+          <h3 class="specs-title">Especificaciones técnicas</h3>
+          <ul class="specs-grid">
+            <li><span class="k">Material</span><span class="v">Oystersteel (acero)</span></li>
+            <li><span class="k">Diámetro</span><span class="v">41 mm</span></li>
+            <li><span class="k">Cristal</span><span class="v">Zafiro</span></li>
+            <li><span class="k">Bisel</span><span class="v">Cerachrom unidireccional</span></li>
+            <li><span class="k">Movimiento</span><span class="v">Automático COSC</span></li>
+            <li><span class="k">Resistencia al agua</span><span class="v">300 m</span></li>
+          </ul>
+
+          <!-- Opciones simuladas -->
+          <section class="product-options" aria-label="Opciones de personalización">
+            <!-- Grabado -->
+            <div class="option-group">
+              <label class="option-label" for="engrave">Grabado (máx. 18 caracteres)</label>
+              <div class="engraving-input">
+                <input id="engrave" type="text" maxlength="18" placeholder="Ej: Deep Blue • 2025"/>
+                <a class="btn-config" href="#">Aplicar grabado</a>
+              </div>
             </div>
-            <div class="footer-section">
-                <div class="footer-text">© 2025 LuxTime</div>
-                <div class="footer-text">Todos los derechos reservados</div>
+
+            <!-- Cambio de correa -->
+            <div class="option-group">
+              <span class="option-label">Cambio de correa</span>
+              <div class="swatch-group" role="radiogroup" aria-label="Elegir correa">
+                <input type="radio" id="strap-acero" name="strap" checked/>
+                <label for="strap-acero" class="swatch" data-strap="acero" title="Brazalete de acero" aria-label="Brazalete de acero"></label>
+
+                <input type="radio" id="strap-negra" name="strap"/>
+                <label for="strap-negra" class="swatch" data-strap="negra" title="Piel negra" aria-label="Correa piel negra"></label>
+
+                <input type="radio" id="strap-marron" name="strap"/>
+                <label for="strap-marron" class="swatch" data-strap="marron" title="Piel marrón" aria-label="Correa piel marrón"></label>
+
+                <input type="radio" id="strap-oro" name="strap"/>
+                <label for="strap-oro" class="swatch" data-strap="oro" title="Brazalete de oro" aria-label="Brazalete de oro"></label>
+              </div>
             </div>
-            <div class="footer-section">
-                <div class="footer-text">contacto@luxtime.com</div>
-                <div class="footer-text">+57 300 123 4567</div>
-            </div>
-            <div class="footer-section">
-                <a href="https://github.com/juliansantamaria0" class="footer-link" target="_blank" rel="noopener noreferrer">Desarrollado por Julian Santamaria</a>
-                <div class="footer-text">Campus Bucaramanga</div>
-            </div>
+
+            <a class="btn-add" href="../../Coleccion/Coleccion.html">Ver en catálogo</a>
+          </section>
+
+          <!-- Volver -->
+          <a href="../../Coleccion/Coleccion.html" class="back-button">Volver a la Colección</a>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Productos relacionados (carrusel horizontal sin JS) -->
+    <section class="related-section" aria-label="Productos relacionados">
+      <h3 class="related-title">Productos relacionados</h3>
+      <div class="related-carousel">
+        <div class="related-track" aria-label="Carrusel de productos relacionados" tabindex="0">
+          <!-- Relacionado 1 -->
+          <article class="related-card">
+            <figure class="related-media">
+              <img src="../../Relojsimage/related-1.jpg" alt="Rolex Sea-Dweller — imagen"/>
+            </figure>
+            <div class="related-name">Rolex Sea-Dweller</div>
+            <a class="related-link" href="../../Coleccion/Coleccion.html">Ver detalles →</a>
+          </article>
+
+          <!-- Relacionado 2 -->
+          <article class="related-card">
+            <figure class="related-media">
+              <img src="../../Relojsimage/related-2.jpg" alt="Tudor Pelagos — imagen"/>
+            </figure>
+            <div class="related-name">Tudor Pelagos</div>
+            <a class="related-link" href="../../Coleccion/Coleccion.html">Ver detalles →</a>
+          </article>
+
+          <!-- Relacionado 3 -->
+          <article class="related-card">
+            <figure class="related-media">
+              <img src="../../Relojsimage/related-3.jpg" alt="Omega Seamaster 300 — imagen"/>
+            </figure>
+            <div class="related-name">Omega Seamaster 300</div>
+            <a class="related-link" href="../../Coleccion/Coleccion.html">Ver detalles →</a>
+          </article>
+
+          <!-- Relacionado 4 -->
+          <article class="related-card">
+            <figure class="related-media">
+              <img src="../../Relojsimage/related-4.jpg" alt="Breitling Superocean — imagen"/>
+            </figure>
+            <div class="related-name">Breitling Superocean</div>
+            <a class="related-link" href="../../Coleccion/Coleccion.html">Ver detalles →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="https://github.com/juliansantamaria0" class="footer-link">LuxTime</a>
+        <div class="footer-text">Relojes de Lujo</div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-text">© 2025 LuxTime</div>
+        <div class="footer-text">Todos los derechos reservados</div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-text">contacto@luxtime.com</div>
+        <div class="footer-text">+57 300 123 4567</div>
+      </div>
+      <div class="footer-section">
+        <a href="https://github.com/juliansantamaria0" class="footer-link" target="_blank" rel="noopener noreferrer">Desarrollado por Julian Santamaria</a>
+        <div class="footer-text">Campus Bucaramanga</div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
