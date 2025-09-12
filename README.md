@@ -25,31 +25,30 @@ Flexbox: Todos los layouts, desde el header hasta el footer, usan Flexbox para u
 Accesibilidad: Textos con alto contraste, atributos aria-label para navegación, y soporte para usuarios con preferencias de movimiento reducido.
 
 
-README.md: Esta documentación.
-LICENSE: Licencia MIT.
+# README.md: Esta documentación.
+# LICENSE: Licencia MIT.
 
-🚀 Cómo Explorar el Sitio
-
+# 🚀 Cómo Explorar el Sitio
 Clonar el Repositorio:
-git clone https://github.com/<tu-usuario>/luxtime-website.git
-cd luxtime-website
+git clone: https://github.com/juliansantamaria0/ProyectodeHTML_CSS.git
 
 
-Abrir el Sitio:
+
+# Abrir el Sitio:
 
 Abre src/index.html en un navegador (Chrome, Firefox, Safari).
 Para una experiencia óptima, usa un servidor local:python -m http.server 8000
 
 
 
-Dependencias:
+# Dependencias:
 
 El sitio usa HTML y CSS nativos, sin librerías externas.
 Las fuentes Playfair Display y Open Sans se cargan desde Google Fonts.
 
 
 
-🛠️ Planificación y Diseño
+# 🛠️ Planificación y Diseño
 Wireframes
 Los wireframes (en docs/wireframes/) fueron el primer paso para dar vida a LuxTime. Cada página se planificó cuidadosamente para reflejar la elegancia de la marca:
 
@@ -59,14 +58,14 @@ Detalle del Producto: Imagen grande con zoom, detalles técnicos, opciones de pe
 Historia: Línea cronológica interactiva (desplazamiento horizontal) y galería en mosaico.
 Contacto: Formulario con campos para nombre, correo, teléfono, mensaje, y enlaces a redes sociales.
 
-UI/UX
+# UI/UX
 
 Estilo Visual: Inspirado en la relojería suiza, con un fondo blanco puro, acentos dorados y tipografía elegante (Playfair Display para títulos, Open Sans para texto).
 Navegación: Un header fijo con un logo clickable y un menú claro, accesible en todas las páginas.
 Interacciones: Animaciones CSS simulan dinamismo, como el carrusel del banner (rotación automática), el zoom en imágenes de productos, y validaciones visuales en el formulario.
 Responsividad: Diseñado para pantallas grandes (>992px), tablets (≤992px), y móviles (≤768px, ≤480px), con layouts que se adaptan usando Flexbox y media queries.
 
-🎨 Componentes Interactivos Simulados
+# 🎨 Componentes Interactivos Simulados
 
 Banner Rotativo (Inicio): Tres imágenes que cambian cada 5 segundos mediante animaciones CSS, con texto superpuesto y un botón de acción.
 Carrusel de Relojes Destacados (Inicio): Seis tarjetas que se desplazan horizontalmente con scroll suave, simulando un carrusel interactivo.
@@ -75,7 +74,7 @@ Validación Visual (Contacto): El formulario resalta campos vacíos o incorrecto
 Línea Cronológica (Historia): Una línea de tiempo desplazable que resalta hitos clave (1905-2025) con íconos y descripciones.
 Zoom en Imagen (Detalle): La imagen principal crece ligeramente al pasar el cursor, con un borde dorado que se intensifica.
 
-📜 Control de Versiones
+#  Control de Versiones
 El proyecto utiliza Conventional Commits para un historial claro y organizado. Ejemplos de commits:
 
 feat: add banner rotativo con animaciones CSS en index.html
@@ -92,7 +91,7 @@ Responsividad: Media queries para desktop (>992px), tablet (≤992px), móvil (�
 Accesibilidad: Uso de aria-label, alto contraste, y soporte para prefers-reduced-motion.
 Imágenes: Incluidas en Relojsimage/ (relojes) y images/ (galería histórica). Asegúrate de que todas las imágenes estén en su lugar para evitar errores.
 
-🤝 Contribuciones
+## 🤝 Contribuciones
 Este proyecto es una maqueta estática para LuxTime. Si deseas contribuir:
 
 Crea un fork del repositorio.
