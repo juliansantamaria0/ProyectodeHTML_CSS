@@ -275,6 +275,7 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-color: #F7D675;
 }
 
 .feature-card:hover {
