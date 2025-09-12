@@ -787,35 +787,50 @@ footer {
   font-style: italic;
   color: var(--subtitle-color);
 }
-
 /* Responsivo */
 @media (max-width: 992px) {
-  .principal-section h1 { font-size: 4em; }
-  .principal-section .subtitle { font-size: 1.4em; }
   .section-title { font-size: 2.5em; }
-  .cta-content h2 { font-size: 3em; }
-  .principal-section { height: 80vh; }
+  .section-subtitle { font-size: 1em; }
+  .feature-card h3 { font-size: 1.7em; }
+  .feature-card p { font-size: 0.9em; }
 }
 @media (max-width: 768px) {
-  .nac-container { flex-direction: column; align-items: center; }
-  .navegacion ul { flex-direction: column; margin-top: var(--spacing-unit); align-items: center; }
-  .navegacion li { margin: 0.6rem 0; }
-  .principal-section { height: 72vh; }
-  .principal-section h1 { font-size: 3.2em; }
-  .principal-section .subtitle { font-size: 1.1em; }
-  .features-grid, .stats-grid { grid-template-columns: 1fr; }
-  .feature-card, .stat-item { padding: calc(var(--spacing-unit) * 1.5); }
+  .nac-container { flex-direction: row; justify-content: space-between; }
+  .navegacion {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    background: var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .navegacion ul { flex-direction: column; gap: 1.5rem; text-align: center; width: 100%; }
+  .navegacion li { width: 100%; }
+  .navegacion a { display: block; padding: 1rem 0; font-size: 1.5rem; }
+  .menu-icon { display: flex; }
+  .menu-toggle:checked ~ .navegacion { transform: translateX(0); }
+  .features-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  .feature-card { padding: calc(var(--spacing-unit) * 1.5); }
   .footer-content { flex-direction: column; align-items: center; }
   .footer-section { text-align: center; margin-bottom: calc(var(--spacing-unit) * 1.5); }
-  .cta-content h2 { font-size: 2.5em; }
-  .cta-content p { font-size: 1.1em; }
-  .navegacion a { padding: 0.4rem 0; }
 }
 @media (max-width: 480px) {
   .logo { font-size: 1.8em; }
-  .principal-section h1 { font-size: 2.5em; }
-  .principal-section .subtitle { font-size: 1em; }
-  .cta-button { padding: 0.8rem 1.6rem; font-size: 1.05em; }
   .section-title { font-size: 2em; }
-  .stat-number { font-size: 2.8em; }
+  .section-subtitle { font-size: 0.9em; }
+  .features-grid { grid-template-columns: 1fr; }
+  .feature-card { padding: var(--spacing-unit); }
+  .feature-card h3 { font-size: 1.5em; }
+  .feature-card p { font-size: 0.85em; }
+  .btn-details,
+  .cta-button { padding: 0.8rem 2rem; font-size: 1.1em; }
+  .availability { font-size: 0.8em; padding: 0.25rem 0.6rem; }
 }
