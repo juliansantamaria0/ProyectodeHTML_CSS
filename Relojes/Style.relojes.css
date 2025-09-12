@@ -591,3 +591,79 @@ footer{
 @media (max-width:992px){
   .detail-grid{ grid-template-columns:1fr; }
 }
+
+
+/* Tamaño responsive de cada card del carrusel (ancho) */
+:root{
+  --related-card-w: clamp(220px, 30vw, 320px);  /* antes ~78%: quedaba muy grande */
+  --related-img-ratio: 4/5;                     /* relación más vertical y elegante */
+}
+
+.related-track{
+  grid-auto-columns: var(--related-card-w);
+  gap: .8rem; /* un poco menos separación */
+}
+
+/* Card más compacta */
+.related-card{
+  padding: .75rem;
+  border-radius: 14px;
+}
+
+/* Marco de la imagen más proporcionado */
+.related-media{
+  aspect-ratio: var(--related-img-ratio);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(184,134,11,.22);
+}
+
+/* Imagen ajustada al contenedor sin salirse */
+.related-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);               /* base sin zoom excesivo */
+  transition: transform .45s ease;   /* hover suave */
+}
+
+.related-card:hover .related-media img{
+  transform: scale(1.035);
+}
+
+/* Tipografía dentro de la card ligeramente más compacta */
+.related-name{ font-size: .98rem; }
+.related-link{ font-size: .95rem; }
+
+/* ---------- Imagen principal del detalle ---------- */
+/* Limita el ancho visual para que no “invada” la vista en desktop */
+.detail-media{
+  max-width: min(560px, 90vw);
+  margin: 0 auto 1rem;
+}
+
+/* Asegura que el <img> de la figura tome el ancho de .detail-media */
+.detail-media img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Si usas .detail-grid (dos columnas), añade: */
+@media (min-width: 992px){
+  .detail-grid{
+    display: grid;
+    grid-template-columns: 1.05fr .95fr; /* imagen un poco más chica que el texto */
+    gap: 1.6rem;
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px){
+  :root{ --related-card-w: clamp(200px, 55vw, 280px); }
+}
+@media (max-width: 480px){
+  :root{ --related-card-w: 86vw; } /* casi ancho de pantalla, pero con aire */
+  .related-name{ font-size: .95rem; }
+  .related-link{ font-size: .92rem; }
+}

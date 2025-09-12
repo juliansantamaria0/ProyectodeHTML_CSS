@@ -1,106 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - LuxTime</title>
-  <link rel="stylesheet" href="../Contacto/ContactoStyle.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - LuxTime</title>
+    <meta name="description" content="Contáctanos en LuxTime para consultas sobre relojes de lujo. Completa nuestro formulario o usa nuestros datos de contacto directo.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ContactoStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="main-header">
-    <div class="nac-container">
-      <a href="index.html" class="logo" aria-label="LuxTime - Ir a la página de inicio">LuxTime</a>
-      <nav class="navegacion" aria-label="Navegación principal">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="../Marcas/Marcas.html">Marcas</a></li>
-          <li><a href="../Coleccion/Coleccion.html">Colección</a></li>
-          <li><a href="../Historia/historia.html">Historia</a></li>
-          <li><a href="../Contacto/Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container" id="contacto" role="main" aria-labelledby="contacto-title">
-    <h1 class="section-title" id="contacto-title">📬 Contacto</h1>
-    <p class="section-subtitle">Estamos aquí para ayudarte. Completa el formulario o usa nuestros datos directos.</p>
-
-    <section class="contact-form-section" aria-label="Formulario de contacto">
-      <form id="contactForm" novalidate>
-        <div class="form-group">
-          <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
-          <span class="error-message" aria-live="polite"></span>
+    <header class="main-header">
+        <div class="nac-container">
+            <a href="../index.html" class="logo" aria-label="LuxTime - Ir a la página de inicio">LuxTime</a>
+            <nav class="navegacion" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Marcas/Marcas.html">Marcas</a></li>
+                    <li><a href="../Coleccion/Coleccion.html">Colección</a></li>
+                    <li><a href="../Historia/historia.html">Historia</a></li>
+                    <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="form-group">
-          <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
-          <span class="error-message" aria-live="polite"></span>
+    <main class="container" id="contacto" role="main" aria-labelledby="contacto-title">
+        <h1 class="section-title" id="contacto-title">📬 Contacto</h1>
+        <p class="section-subtitle">Estamos aquí para ayudarte. Completa el formulario o usa nuestros datos directos.</p>
+
+        <section class="contact-form-section" aria-label="Formulario de contacto">
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+                    <span class="error-message" aria-live="polite">Por favor, ingresa tu nombre completo.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+                    <span class="error-message" aria-live="polite">Por favor, ingresa un correo electrónico válido.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567" pattern="^\+?[0-9\s\-]{7,15}$" />
+                    <span class="error-message" aria-live="polite">Por favor, ingresa un número de teléfono válido (7-15 dígitos).</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <span class="error-message" aria-live="polite">Por favor, ingresa un mensaje.</span>
+                </div>
+
+                <button type="submit" class="cta-button">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="contact-info-section" aria-label="Datos de contacto directo y redes sociales">
+            <h2 class="section-title">Datos de Contacto Directo</h2>
+            <ul class="contact-info-list">
+                <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@luxtime.com" aria-label="Enviar correo a contacto@luxtime.com">contacto@luxtime.com</a></li>
+                <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+573001234567" aria-label="Llamar a +57 300 123 4567">+57 300 123 4567</a></li>
+            </ul>
+
+            <h2 class="section-title">Redes Sociales</h2>
+            <ul class="social-media-list">
+                <li>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <a href="https://instagram.com/luxtime" target="_blank" rel="noopener noreferrer" aria-label="Seguir a LuxTime en Instagram">@luxtime</a>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    <a href="https://linkedin.com/company/luxtime-sa" target="_blank" rel="noopener noreferrer" aria-label="Conectar con LuxTime SA en LinkedIn">LuxTime SA</a>
+                </li>
+                <li>
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    <a href="https://facebook.com/luxtime" target="_blank" rel="noopener noreferrer" aria-label="Seguir a LuxTime en Facebook">/luxtime</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="https://github.com/juliansantamaria0" class="footer-link" target="_blank" rel="noopener noreferrer">LuxTime</a>
+                <div class="footer-text">Relojes de Lujo</div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-text">© 2025 LuxTime</div>
+                <div class="footer-text">Todos los derechos reservados</div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-text">contacto@luxtime.com</div>
+                <div class="footer-text">+57 300 123 4567</div>
+            </div>
+            <div class="footer-section">
+                <a href="https://github.com/juliansantamaria0" class="footer-link" target="_blank" rel="noopener noreferrer">Desarrollado por Julian Santamaria</a>
+                <a href="https://github.com/magarcia08" class="footer-link" target="_blank" rel="noopener noreferrer">Desarrollado por María Alejandra</a>
+                <div class="footer-text">Campus Bucaramanga</div>
+            </div>
         </div>
-
-        <div class="form-group">
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="+57 328 2567 914" pattern="^\+?[0-9\s\-]{7,15}$" />
-          <span class="error-message" aria-live="polite"></span>
-        </div>
-
-        <div class="form-group">
-          <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
-          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-          <span class="error-message" aria-live="polite"></span>
-        </div>
-
-        <button type="submit" class="cta-button">Enviar mensaje</button>
-      </form>
-    </section>
-
-    <section class="contact-info-section" aria-label="Datos de contacto directo y redes sociales">
-      <h2 class="section-title">Datos de contacto directo</h2>
-      <ul class="contact-info-list">
-        <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contacto@luxtime.com">contacto@luxtime.com</a></li>
-        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="+57 328 2567 914">+57 328 2567 914</a></li>
-      </ul>
-
-      <h2 class="section-title">Redes sociales</h2>
-      <ul class="social-media-list">
-        <li>
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-          <a href="" target="_blank" rel="noopener noreferrer">@luxtime</a>
-        </li>
-        <li>
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
-          <a href="" target="_blank" rel="noopener noreferrer">LuxTime SA</a>
-        </li>
-        <li>
-          <i class="fab fa-facebook" aria-hidden="true"></i>
-          <a href="" target="_blank" rel="noopener noreferrer">/luxtime</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <div class="footer-content">
-      <div class="footer-section">
-                <a href="https://github.com/juliansantamaria0" class="footer-link">LuxTime</a>
-        <div class="footer-text">Relojes de Lujo</div>
-      </div>
-      <div class="footer-section">
-        <div class="footer-text">© 2025 LuxTime</div>
-        <div class="footer-text">Todos los derechos reservados</div>
-      </div>
-      <div class="footer-section">
-        <div class="footer-text">contacto@luxtime.com</div>
-        <div class="footer-text">+57 300 123 4567</div>
-      </div>
-      <div class="footer-section">
-        <a href="https://github.com/juliansantamaria0" class="footer-link" target="_blank" rel="noopener noreferrer">Desarrollado por Julian Santamaria</a>
-        <div class="footer-text">Campus Bucaramanga</div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
